@@ -1,25 +1,28 @@
+// src/App.tsx
+
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import MenuBar from './MenuBar';
+import MainPage from './MainPage';
+import LoginPage from './LoginPage';
+import SignUpPage from './SignUpPage';
+import HorseDetailsPage from './HorseDetailsPage';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="App">
+        <MenuBar />
+        <div style={{ marginRight: '200px', padding: '20px' }}>
+          <Routes>
+            <Route path="/" element={<MainPage />} />
+            <Route path="/sign-in" element={<LoginPage />} />
+            <Route path="/sign-up" element={<SignUpPage />} />
+            <Route path="/horse-details" element={<HorseDetailsPage />} />
+          </Routes>
+        </div>
+      </div>
+    </Router>
   );
 }
 

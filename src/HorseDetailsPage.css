@@ -1,0 +1,62 @@
+/* Base styling for the Horse Details container */
+#horse-details-container {
+    direction: rtl;
+    font-family: 'Tajawal', sans-serif;
+    width: 100%;
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #f5f5f5;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+#horse-details-title {
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 25px;
+}
+
+/* Styling for each input group */
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px 12px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s;
+}
+
+.input-group input:focus {
+    border-color: #3498db;
+    outline: none;
+}
+
+/* Styling for the save button */
+#horse-details-save {
+    width: 100%;
+    padding: 12px 15px;
+    font-size: 16px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#horse-details-save:hover {
+    background-color: #2980b9;
+}

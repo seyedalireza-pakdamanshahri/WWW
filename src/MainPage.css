@@ -1,0 +1,145 @@
+body,
+html {
+    overflow-y: auto;
+    font-family: 'Tahoma', sans-serif;
+}
+
+.container {
+    direction: rtl;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.header {
+    text-align: center;
+    padding: 30px 0;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 24px;
+    border-bottom: 3px solid #333;
+}
+
+.intro,
+.crew,
+.sponsors {
+    margin: 30px 0;
+    padding: 25px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.project-info {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    margin: 30px 0;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.project-img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+    transition: transform 0.3s;
+}
+
+.project-img:hover {
+    transform: scale(1.05);
+}
+
+.crew-members {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    /* To provide spacing between the members */
+}
+
+.member-container {
+    flex: 0 0 calc(33.33% - 20px);
+    /* Three members per row with a gap of 20px */
+    padding: 15px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.member-container img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    transition: transform 0.3s;
+}
+
+.member-container img:hover {
+    transform: scale(1.05);
+}
+
+.sponsor-logos {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.member,
+.sponsor-logos img {
+    width: 200px;
+    margin: 15px;
+    transition: transform 0.3s;
+}
+
+.member:hover,
+.sponsor-logos img:hover {
+    transform: scale(1.1);
+}
+
+.footer {
+    text-align: center;
+    padding: 30px 0;
+    background-color: #333;
+    color: white;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 550px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 24px;
+    cursor: pointer;
+    background-color: #f9f9f9;
+    border: none;
+    border-radius: 50%;
+    padding: 5px 10px;
+}
+
+.close-btn:hover {
+    background-color: #ddd;
+}

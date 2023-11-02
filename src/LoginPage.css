@@ -1,0 +1,86 @@
+/* LoginPage.css */
+body {
+    margin: 0;
+    font-family: 'Tajawal', sans-serif;
+    overflow-x: hidden;
+    /* Hide horizontal overflow */
+    overflow-y: hidden;
+    /* Hide vertical overflow */
+}
+
+.login-container {
+    display: flex;
+    direction: rtl;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: calc(100vw - 220px);
+    /* Adjust the width */
+    position: absolute;
+    /* Use absolute positioning */
+    top: 0;
+    left: 0;
+    right: 220px;
+    /* Space for menu bar */
+    bottom: 0;
+    background-color: #2c3e50;
+}
+
+
+
+.login-box {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px 40px;
+    /* Add 40px horizontal padding */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    background-color: #34495e;
+    color: white;
+}
+
+
+h1 {
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #3498db;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+p {
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 420px) {
+    .login-box {
+        border-radius: 0;
+        box-shadow: none;
+    }
+}
